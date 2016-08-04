@@ -2,13 +2,11 @@
     {{date format="DD.MM.YYYY"}}
 
     {{#if tags}}
-        in
+        en
         <span class="c-post-view-meta__tags">
             {{#foreach tags}}
                 <a href="{{url}}" title="{{name}}">#{{name}}</a>
             {{/foreach}}
         </span>
     {{/if}}
-    |
-    {{> "post-share"}}
 </div>
